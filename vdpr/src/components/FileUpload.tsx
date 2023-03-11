@@ -14,8 +14,8 @@ const FileUpload = () => {
     try {
       const res = await axios({
         method: "GET",
-        url: `${process.env.NEXT_PUBLIC_HEROKU_TASKS_URL}/${taskId}`,
-        // url: `http://localhost:5000/tasks/${taskId}`,
+        // url: `${process.env.NEXT_PUBLIC_HEROKU_TASKS_URL}/${taskId}`,
+        url: `http://localhost:5000`,
       });
       console.log(res);
 
