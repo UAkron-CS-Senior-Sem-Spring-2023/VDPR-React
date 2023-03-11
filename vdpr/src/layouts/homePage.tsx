@@ -7,6 +7,7 @@ import {
   theme,
 } from "@chakra-ui/react"
 import { ColorModeSwitcher } from "../ColorModeSwitcher"
+import FileInput from "../components/FileInput"
 
 const StartPage = () => {
   return (
@@ -16,6 +17,7 @@ const StartPage = () => {
       <VStack spacing={5}>
         <Heading>
           Welcome to VDPR
+          <FileInput />
         </Heading>
       </VStack>
     </Grid>
