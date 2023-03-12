@@ -24,9 +24,8 @@ export default function Dropzone({
       let formData = new FormData();
       formData.append("uploadfile", acceptedFiles[0]);
       axios({
-        // this method should be post because we will use it to upload the file. For now it is get because we only have a get endpoint
-        // method: "POST",
-        method: "GET",
+        // method: "GET",
+        method: "POST",
         // url: process.env.NEXT_PUBLIC_HEROKU_PARSE_URL,
         url: "http://localhost:80/parse",
         data: formData,
