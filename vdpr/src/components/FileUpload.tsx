@@ -16,7 +16,7 @@ const FileUpload = () => {
         //method: "GET",
         method: "POST",
         // url: `${process.env.NEXT_PUBLIC_HEROKU_TASKS_URL}/${taskId}`,
-        url: `http://localhost:80`,
+        url: `http://localhost:3000/parse`,
       });
       console.log(res);
 
