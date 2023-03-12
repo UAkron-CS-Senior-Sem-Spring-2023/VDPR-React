@@ -24,7 +24,8 @@ export default function Dropzone({
       formData.append("uploadfile", acceptedFiles[0]);
 
       axios({
-        method: "POST",
+        // method: "GET",
+        method: "GET",
         // url: process.env.NEXT_PUBLIC_HEROKU_PARSE_URL,
         url: "http://localhost:3000/parse",
         data: formData,
