@@ -13,7 +13,8 @@ const FileUpload = () => {
   const getStatus = useCallback(async (taskId: string) => {
     try {
       const res = await axios({
-        method: "GET",
+        //method: "GET",
+        method: "POST",
         // url: `${process.env.NEXT_PUBLIC_HEROKU_TASKS_URL}/${taskId}`,
         url: `http://localhost:80`,
       });
