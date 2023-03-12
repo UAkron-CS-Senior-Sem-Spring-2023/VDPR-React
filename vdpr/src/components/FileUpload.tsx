@@ -13,10 +13,11 @@ const FileUpload = () => {
   const getStatus = useCallback(async (taskId: string) => {
     try {
       const res = await axios({
+        // this method should be get because we will use it to fetch the file every 5 seconds until the file is ready
         //method: "GET",
-        method: "POST",
+        method: "GET",
         // url: `${process.env.NEXT_PUBLIC_HEROKU_TASKS_URL}/${taskId}`,
-        url: `http://localhost:80`,
+        url: `http://localhost:80/parse`,
       });
       console.log(res);
 

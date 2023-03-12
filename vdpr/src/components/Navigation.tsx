@@ -1,30 +1,18 @@
 import * as React from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import StartPage from "../layouts/homePage";
+import ResultsPage from "../layouts/resultsPage";
 
 
 const routes = [
   {
     path: "/",
     element: <StartPage />,
-    loader: async () => {
-       return fetch(`/api/dashoard`);
-    },
   },
-  // {
-  //   path: "/messages",
-  //   element: <Layout2 />,
-  //   loader: async () => {
-  //       return fetch(`/api/messages`);
-  //   },
-  // },
-  //  {
-  //   path: "/messages/:slug",
-  //   element: <Message />,
-  //   loader: async ({param}) => {
-  //       return fetch(`/api/messages/${param.slug}`);
-  //   },
-  // }
+  {
+    path: "/results",
+    element: <ResultsPage />,
+  }
 ];
 
 const Navigation = () => {
