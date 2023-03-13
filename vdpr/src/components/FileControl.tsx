@@ -27,7 +27,7 @@ export default function Dropzone({
         // method: "GET",
         method: "POST",
         // url: process.env.NEXT_PUBLIC_HEROKU_PARSE_URL,
-        url: "http://localhost:80/parse",
+        url: "http://localhost:3000/parse",
         data: formData,
       })
         .then((res) => {
